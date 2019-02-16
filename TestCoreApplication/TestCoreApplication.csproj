@@ -7,18 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove=".circleci\**" />
-    <Content Remove=".circleci\**" />
-    <EmbeddedResource Remove=".circleci\**" />
-    <None Remove=".circleci\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="Dockerfile" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include=".circleci\config.yml" />
   </ItemGroup>
 
   <ItemGroup>
